@@ -118,6 +118,10 @@ body {
   grid-area: equals;
 }
 
+.btn:hover{
+  background-color:red;
+}
+
 
 .circle{
   background: linear-gradient(to right, red, white);
@@ -129,4 +133,23 @@ body {
   left:60px;
   top: 190px;
   z-index: -1;
+}
+
+.prank{
+  animation: prank 0.2s ease-in;
+}
+
+@keyframes prank{
+  0%{
+    transform: translateX(10px);
+  }
+  50%{
+    transform: translateX(-10px);
+  }
+  75%{
+    transform: translateX(10px);
+  }
+  100%{
+    transform: translateX(-10px);
+  }
 }
